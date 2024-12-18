@@ -45,4 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.querySelectorAll('[loading="lazy"]').forEach((element) => {
+  element.setAttribute('loading', 'eager');
+});
 
